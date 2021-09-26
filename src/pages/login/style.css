@@ -1,0 +1,76 @@
+:root{
+    --cor-padrao: #18181d;
+    --cor-padrao-hover: #101009;
+    --cor-fonte :#f5f5f5;
+}
+*{
+    font-family: 'Roboto';
+}
+.login{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, rgb(50, 60, 61),var(--cor-padrao));
+}
+.login-logo img{
+    width: 300px;
+    height: auto;
+    filter: grayscale(1);
+    filter: opacity(0.7);
+}
+.login-inputs h1{
+    font-size: 50px;
+}
+.login h4{
+    font-weight: 300;
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--cor-fonte);
+
+}
+.login-email, .login-senha{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--cor-fonte);
+    background-color: var(--cor-padrao);
+    border-radius: 3px;
+    padding: 3px;
+    width: 280px;
+    height: 40px;
+    margin-top: 10px;
+}
+input{
+    width: 80%;
+    height: 25px;
+    outline: none;
+    background-color: transparent;
+    color: var(--cor-fonte);
+    border:0;
+    margin: 0;
+
+}
+.login-senha input{
+    width: 68%;
+}
+button{
+    width: 285px;
+    background-color: var(--cor-padrao);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 8px 10px;
+    font-size: 10pt;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: var(--cor-padrao-hover)
+}
+.show-senha{
+    cursor: pointer;
+}
